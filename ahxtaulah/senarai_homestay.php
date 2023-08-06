@@ -58,7 +58,7 @@ include('db_conn.php');
             <th>Nombor</th>
             <th>Nama homestay</th>
             <th>Harga sehari</th>
-            <th>Operasi</th>
+            <!-- <th>Operasi</th> -->
         </tr>
         <?php 
         $sql = "select * from homestay";
@@ -69,17 +69,14 @@ include('db_conn.php');
             <td><?php echo $homestay ['norumah']; ?></td>
             <td><?php echo $homestay ['namarumah']; ?></td>
             <td>RM <?php echo $homestay ['harga']; ?></td>
-            <td>
-                <a href="homestay_update.php?norumah=<?php echo $homestay['norumah'];?>">
+            <!-- <td>
+                <a href="senarai_update.php?norumah=<?php echo $homestay['norumah'];?>">
                     <img src=image/update.png>
                 </a>
-                <a href="homestay_delete.php?norumah=<?php echo $homestay['norumah'];?>">
+                <a href="senarai_delete.php?norumah=<?php echo $homestay['norumah'];?>">
                     <img src=image/delete.png>
                 </a>
-                <a href="homestay_delete.php?norumah=<?php echo $homestay['norumah'];?>">
-                    <img src=image/review.png height="30px" width="30px">
-                </a>
-            </td>
+            </td> -->
         </tr>
         <?php } ?>
     </table>
